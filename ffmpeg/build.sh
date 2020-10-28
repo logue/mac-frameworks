@@ -1,8 +1,8 @@
 #!/bin/bash
 
 export PROJ="ffmpeg"
-export VERSION="4.1.1"
-export URL="http://ffmpeg.org/releases/ffmpeg-4.1.1.tar.bz2"
+export VERSION="4.2.3"
+export URL="http://ffmpeg.org/releases/ffmpeg-4.2.3.tar.bz2"
 export OGGBASE=$(cd "../ogg/installs/x86_64" && pwd)
 export VORBISBASE=$(cd "../vorbis/installs/x86_64" && pwd)
 export VPXBASE=$(cd "../vpx/installs/x86_64" && pwd)

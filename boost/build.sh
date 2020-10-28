@@ -1,9 +1,10 @@
 #!/bin/bash -l
 
 export PROJ="boost"
-export VERSION="1.73.0"
+export VERSION="1.74.0"
 export VERSIONDL="${VERSION//./_}"
 export URL="https://dl.bintray.com/boostorg/release/$VERSION/source/boost_$VERSIONDL.tar.bz2"
+export ICONVBASE=$(cd "../libiconv/installs/x86_64" && pwd)
 export DIRNAME="${PROJ}_${VERSIONDL}"
 export FWKS=(libboost_system libboost_filesystem libboost_locale boost)
 export CONFIGOPTS=""
@@ -64,7 +65,7 @@ env \
   LD="$DEV/usr/bin/g++" \
   CFLAGS="$FLAGS" \
   LDFLAGS="$FLAGS" \
-  ./bootstrap.sh --prefix="$IDIR" --with-libraries=filesystem,system
+  ./bootstrap.sh --prefix="$IDIR" --with-libraries=filesystem,system,locale
 
 ./b2 install
 
