@@ -5,7 +5,7 @@ export VERSION="1.73.0"
 export VERSIONDL="${VERSION//./_}"
 export URL="https://dl.bintray.com/boostorg/release/$VERSION/source/boost_$VERSIONDL.tar.bz2"
 export DIRNAME="${PROJ}_${VERSIONDL}"
-export FWKS=(libboost_system libboost_filesystem boost)
+export FWKS=(libboost_system libboost_filesystem libboost_locale boost)
 export CONFIGOPTS=""
 export LICENSE="LICENSE_1_0.txt"
 

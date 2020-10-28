@@ -21,8 +21,8 @@ for DIR in ogg vorbis vpx; do
 done
 
 # Frameworks (binary and source)
-for DIR in sdl2 sdl2_image sdl2_net sdl2_ttf \
-           boost ffmpeg jpeg png speex speexdsp zziplib; do
+for DIR in libiconv sdl2 sdl2_image sdl2_net sdl2_ttf \
+           boost ffmpeg jpeg webp png speex speexdsp zziplib; do
   cd ../$DIR
   ./build.sh
   for FWK in *.framework; do
