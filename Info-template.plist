@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$FRAMEWORK_NAME</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.bungie.source.$FRAMEWORK_NAME</string>
+	<string>dev.logue.$FRAMEWORK_NAME</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
